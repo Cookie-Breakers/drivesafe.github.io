@@ -108,7 +108,8 @@ p {
     background-color: #222;
   }
   #mainNav .navbar-brand h3 {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: lighter;
   }
   #mc_embed_signup {
     

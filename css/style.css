@@ -110,6 +110,9 @@ p {
   #mainNav .navbar-brand h3 {
     font-size: 15px;
     font-weight: lighter;
+    border: 3px double #fff;
+    padding: 5px;
+    border-radius: 3px;
   }
   #mc_embed_signup {
     

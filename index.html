@@ -31,7 +31,7 @@
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
       <!--<span class="site-heading-upper text-primary mb-3">A Free Bootstrap 4 Business Theme</span>-->
-      <span class="site-heading-lower">Cookie Breakers</span>
+      <span class="site-heading-lower" style="font-weight: 200; text-shadow: 6px 0px 0px currentColor;">Cookie Breakers</span>
     </h1>
 
     <!-- Navigation -->
@@ -192,6 +192,23 @@
       $('html, body').animate({scrollTop:0}, '300');
     });
 
+    // Sticky Navbar
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbarResponsive");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
 
   </script>
 

@@ -313,9 +313,12 @@ input[type=submit]:hover {
 
 footer {
   
-  
+  background: #011f30;
   color: white;
-  margin-top:100px;
+  margin-top:300px;
+  width: 100%;
+  
+  
 }
 
 footer a {
@@ -336,7 +339,7 @@ footer a:hover {
 }
 
 .footer-middle {
-  padding-top: 2em;
+  padding-top: 25px;
   color: white;
 }
 

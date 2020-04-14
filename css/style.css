@@ -1,5 +1,3 @@
-
-
 body {
   font-family: 'Lora';
   background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg.jpg");
@@ -46,7 +44,7 @@ p {
 }
 
 .page-section {
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -69,9 +67,15 @@ p {
 .bg-faded {
   background-color: rgba(255, 255, 255, 0.85);
 }
+/* #navbarResponsive {
+  background-color: #fff;
+  position: fixed;
+} */
 
+  
 #mainNav {
   font-family: 'Raleway';
+  
 }
 
 #mainNav .navbar-brand {
@@ -81,22 +85,28 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 800;
+  letter-spacing: 3px;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: #e6a756;
 }
 
-@media (min-width: 992px) {
+
+@media (max-width: 768px) {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
+    letter-spacing: 3px;
   }
-  #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
+  .go-top:hover {
+    background-color: #222;
   }
-  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #e6a756;
-  }
+  
+  
+
 }
 
 .btn-xl {
@@ -128,6 +138,22 @@ p {
     left: 0;
     position: absolute;
     bottom: -2rem;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 30px;
+    overflow: hidden;
+    font-size: 20px;
+    text-decoration: overline;
+    z-index: 9999;
+
+  }
+  .site-heading-lower {
+    
+    letter-spacing: 25px;
+    
   }
 }
 
@@ -398,4 +424,42 @@ ul.social-network li {
 }
 #copyright {
   text-align: center;
+}
+
+/* Back top */
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px; 
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }

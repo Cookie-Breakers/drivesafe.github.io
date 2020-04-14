@@ -81,6 +81,7 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 800;
+  letter-spacing: 3px;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: rgba(255, 255, 255, 0.4);
@@ -91,10 +92,23 @@ p {
 }
 
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
+    letter-spacing: 3px;
   }
+  /* #mainNav .navbar-brand {
+    color: green;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+  } */
+  .go-top:hover {
+    background-color: #222;
+  }
+  
+  
+
 }
 
 .btn-xl {
@@ -396,4 +410,42 @@ ul.social-network li {
 }
 #copyright {
   text-align: center;
+}
+
+/* Back top */
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px; 
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }

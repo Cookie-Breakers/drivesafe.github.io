@@ -52,7 +52,7 @@
               <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="model.html">app</a>
+              <a class="nav-link text-uppercase text-expanded" href="model.html">Model</a>
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="Team.html">Team</a>
@@ -102,9 +102,10 @@
         </div>
       </div>
     </section>
+    
+    <!-- Footer Section -->
 
-
-    <footer class="mainfooter" role="contentinfo">
+    <footer class="mainfooter" role="contentinfo" style="border-top: 2px solid white;">
       <div class="footer-middle">
         <div class="container">
           <div class="row">
@@ -121,7 +122,7 @@
                   <li><a href="#">FAQs</a></li>
                 </ul>
               </div>
-            </div>
+             </div>
             <div class="col-md-3 col-sm-6">
               <!--Column1-->
               <div class="footer-pad">
@@ -174,42 +175,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
-  <script>
-    var btn = $('#button');
-
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-      } else {
-        btn.removeClass('show');
-      }
-    });
-
-    btn.on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({scrollTop:0}, '300');
-    });
-
-    // Sticky Navbar
-    window.onscroll = function() {myFunction()};
-
-    // Get the navbar
-    var navbar = document.getElementById("navbarResponsive");
-
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
-
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-
-  </script>
+  
 
 </html>

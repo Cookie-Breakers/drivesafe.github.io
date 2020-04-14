@@ -1,2 +1,2 @@
 # Driver-Alert-System-
-This Project focusses on the safety of the driver by alerting him before. We use TSR ( Traffic Sign Recognition )
+This Project focusses on the safety of the driver by alerting him before the actual location by detecting the Pedestrian, traffic signs, schools, hospitals and any public places and triggering the voice enabled guidance so as to make driver aware about the situation and drive accordingly. We use TSR ( Traffic Sign Recognition ) system that works in realtime, by continuously monitoring the roads and generating road guide simultaniously.

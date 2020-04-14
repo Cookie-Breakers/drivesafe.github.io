@@ -99,7 +99,7 @@ p {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
     letter-spacing: 3px;
@@ -107,7 +107,16 @@ p {
   .go-top:hover {
     background-color: #222;
   }
-  
+  #mainNav .navbar-brand h3 {
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  #mc_embed_signup {
+    
+    width: 75%;
+    height: 75%;
+    margin: auto;
+  }
   
 
 }

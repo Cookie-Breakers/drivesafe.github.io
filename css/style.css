@@ -46,7 +46,7 @@ p {
 }
 
 .page-section {
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -92,17 +92,11 @@ p {
 }
 
 
-@media screen and (max-width: 992px) {
+@media (max-width: 768px) {
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
     letter-spacing: 3px;
   }
-  /* #mainNav .navbar-brand {
-    color: green;
-    background-color: #fff;
-    width: 100%;
-    text-align: center;
-  } */
   .go-top:hover {
     background-color: #222;
   }

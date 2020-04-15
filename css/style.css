@@ -387,9 +387,13 @@ ul.social-network li {
 .social-network a.icoLinkedin:hover {
   background-color: #007bb7;
 }
+.social-network a.icoGitHub:hover {
+  background-color: #3D444D;
+}
 
 .social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoGitHub:hover i {
   color: #fff;
 }
 

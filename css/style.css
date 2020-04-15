@@ -89,8 +89,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: rgba(88, 224, 218, 0.4);
-  text-decoration: underline;
-  text-decoration-style: wavy;
+  
   
 }
 
